@@ -13,9 +13,8 @@ class MyGrid(GridLayout):
         self.name = TextInput(multiline=False)
         self.add_widget(self.name)
 
-
         self.add_widget(Label(text="Last Name: "))
-        self.Lastname = TextInput(multiline=False)
+        self.lastName = TextInput(multiline=False)
         self.add_widget(self.lastName)
 
         self.add_widget(Label(text="Email: "))
@@ -27,6 +26,7 @@ class MyApp(App):
     def build(self):
         return MyGrid()
         
+
 
     
 if __name__ == "__main__":
